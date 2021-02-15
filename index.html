@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <canvas id="heatMap"></canvas>
+
+
+ <!-- <div id="info" data-content="info">
+  </div> --> 
+  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <div id="measurementdata">Measuring</div>
+
+
+
+  <video id="webcam" width="400" height="300" autoplay></video>
+  <canvas id="overlay" width="400" height="300"></canvas>
+  <canvas id="sdcard" width="400" height="300"></canvas>
+
+
+  <canvas id="eyes" width="570" height="250"></canvas>
+
+  <div id="target"></div>
+  <script>
+      
+        var c = document.getElementById("sdcard");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.strokeStyle = "green";
+        ctx.rect(190, 40, 35, 45);
+        ctx.stroke();
+
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.1.0"></script>
+  <script src="js/vendor/clmtrackr.js"></script>
+  <script src="js/globals.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/facetracker3.js"></script>
+  <script src="js/dataset.js"></script>
+  <script src="js/training.js"></script>
+  <script src="js/heat.js"></script>
+  <script src="js/main.js"></script>
+  
+  
+</body>
+
+</html>
